@@ -3,7 +3,8 @@
 // ---------------------------------------------------------------------
 
 .tabs {
-    //overflow: hidden;
+    position: relative;
+    z-index: 2;
 }
 
 .tabs--3up .tabs__tabs > * {
