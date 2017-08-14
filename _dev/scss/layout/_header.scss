@@ -13,6 +13,18 @@ body {
 	@include start-at($header-breakpoint) {
 		padding-top: 70px;
 	}
+
+	// Hides white space when scroll to top
+	&:before {
+		content: '';
+		width: 100%;
+		background: $black;
+		height: 70px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
 }
 
 .site-header {

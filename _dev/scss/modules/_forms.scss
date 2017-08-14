@@ -62,9 +62,9 @@ $form-height: 40px;
         width: 100%;
         height: $form-height;
         border: none;
+        border-radius: 4px;
         padding-left: 20px;
         padding-right: 20px;
-
         font-family: $heading;
         font-size: 1.5rem;
         font-weight: normal;
@@ -78,6 +78,7 @@ $form-height: 40px;
         width: 120px;
         height: $form-height;
         border: none;
+        border-radius: 0 2px 0 0;
         border-left: 1px solid $white;
 
         font-family: $heading;
