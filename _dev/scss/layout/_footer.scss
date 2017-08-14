@@ -235,6 +235,14 @@
     }
 }
 
+.isIE {
+    .praise-icon,
+    .rock-icon,
+    .flag-icon {
+        display: none;
+    }
+}
+
 .site-footer-planet {
     position: absolute;
     top: 50px;

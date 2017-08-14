@@ -11,7 +11,7 @@
   logo: TravisCI.svg
 
 - name: waffle
-  logo: waffle.png
+  logo: waffle-full.png
 
 - name: circle ci
   logo: circle-ci.svg

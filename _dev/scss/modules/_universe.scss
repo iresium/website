@@ -72,6 +72,14 @@
     width: 90%;
 }
 
+.isIE .universe-logo {
+    background: url('../images/GitHub-Universe-full.png') center / cover no-repeat;
+
+    img {
+        opacity: 0;
+    }
+}
+
 .universe-logo-white {
     display: block;
     position: absolute;
@@ -81,6 +89,10 @@
     height: 100%;
     transition: opacity $trans-long;
     z-index: 2;
+}
+
+.isIE .universe-logo-white {
+    display: none;
 }
 
 
