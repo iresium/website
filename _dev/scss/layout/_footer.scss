@@ -1,0 +1,254 @@
+// ---------------------------------------------------------------------
+//  Site Footer Styles
+// ---------------------------------------------------------------------
+
+.site-footer {
+    position: relative;
+    width: 100%;
+    background: $gray-dark;
+    color: $white;
+    overflow: hidden;
+    z-index: 1;
+
+    svg {
+        fill: $white;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    a:hover {
+        opacity: 0.5;
+    }
+
+    &:after {
+        display: none;
+    }
+
+    &:before {
+        background: url('../images/shapes/stars-lg.svg') center / 1140px 622px repeat;
+        opacity: 0.4;
+    }
+
+    .footer-logo {
+        display: block;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+
+// ----------------------------------------
+// Content
+// ----------------------------------------
+.site-footer-inner {
+
+    > * {
+        margin-top: 40px;
+    }
+
+
+    @include start-at($medium) {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+
+        > * {
+            flex-grow: 1;
+        }
+    }
+
+    @include start-at($large) {
+        flex-wrap: nowrap;
+    }
+}
+
+
+// ----------------------------------------
+// Nav
+// ----------------------------------------
+.site-footer__nav {
+     li > * {
+         @include h6;
+     }
+
+     li + li {
+         margin-top: 2px;
+     }
+
+     @include start-at($medium) {
+         width: 50%;
+     }
+
+     @include start-at($large) {
+         width: auto;
+         min-width: 220px;
+     }
+}
+
+// ----------------------------------------
+// Contact
+// ----------------------------------------
+.site-footer__contact {
+
+    li {
+        display: flex;
+        align-items: baseline;
+
+        .h6 {
+            min-width: 98px;
+        }
+
+        + li {
+            margin-top: 2px;
+        }
+
+        > * + * {
+            margin-left: 6px;
+        }
+
+        .icon-link {
+            margin-top: 5px;
+
+            &:hover > * + * {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        a {
+            line-height: 1;
+        }
+    }
+
+    @include start-at($medium) {
+        width: 50%;
+    }
+
+    @include start-at($large) {
+        width: 280px;
+    }
+}
+
+// ----------------------------------------
+// Register
+// ----------------------------------------
+.site-footer__register {
+
+    @include start-at($medium) {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    @include start-at($large) {
+        width: auto;
+        flex-grow: 1;
+        max-width: 560px;
+        margin-top: 0;
+    }
+}
+
+
+
+// ----------------------------------------
+// Register
+// ----------------------------------------
+
+.site-footer-legal {
+    background: rgba(black, 0.3);
+    //background-blend-mode: multiply;
+
+    .container-wide {
+        padding: 30px 0;
+        text-align: center;
+
+        @include start-at($small) {
+            text-align: left;
+            height: 80px;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    small {
+        font-size: 13px;
+    }
+}
+
+
+.code-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    @include start-at($small) {
+        margin-bottom: 0;
+    }
+
+    > * + * {
+        margin-left: 5px;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+// ----------------------------------------
+// Sponsors / Community Partners
+// ----------------------------------------
+
+.logo-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    li {
+        width: 33.333333%;
+        padding: 10px 0;
+        //background: red;
+
+        @include start-at($small){
+            width: 25%
+        }
+
+        @include start-at($large){
+            width: 20%
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0;
+        max-width: 90%;
+        max-height: 90px;
+
+        @include start-at($medium){
+            max-width: 148px;
+        }
+    }
+}
+
+.site-footer-planet {
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    width: 106px;
+    transform-origin: center;
+    transform: scale(0) rotate(-60deg);
+    transition: transform $trans;
+
+    @include stop-at(545px) {
+        display: none;
+    }
+
+    &.in-view {
+        transform: scale(1) rotate(0);
+    }
+}

@@ -1,0 +1,46 @@
+// ---------------------------------------------------------------------
+//  Schedule Styles
+// ---------------------------------------------------------------------
+
+$sb: $small;
+
+.schedule {
+    margin: 20px 0;
+}
+
+.session {
+    width: 100%;
+    min-height: 65px;
+    padding: 17px 0;
+
+    @include start-at($sb) {
+        display: flex;
+    }
+
+    > * {
+        @include h5;
+        font-weight: 500;
+    }
+}
+
+.session-time {
+    margin-bottom: 5px;
+
+    @include start-at($sb) {
+        margin-bottom: 0;
+        width: 168px;
+    }
+}
+
+.session-title {
+
+
+    @include start-at($sb) {
+        flex-grow: 1;
+    }
+}
+
+
+// ----------------------------------------
+//
+// ----------------------------------------

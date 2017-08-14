@@ -1,0 +1,317 @@
+// ---------------------------------------------------------------------
+//  Flourishes
+// ---------------------------------------------------------------------
+
+.stars-fixed {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        position: absolute;
+        width: 90%;
+        height: 2000px;
+        min-height: 90%;
+        left: 5%;
+        top: 30px;
+        content: '';
+        background: url('../images/shapes/star-group.svg') top center / 1086px 1160px repeat;
+        display: block;
+        z-index: 1;
+        transform-origin: center;
+        opacity: 1;
+        transition: all $trans;
+        pointer-events: none;
+    }
+}
+
+// ---------------------------------
+//  Shooting Stars
+// ---------------------------------
+
+@keyframes shooting-star {
+    0% {
+        opacity: 1;
+        transform: scale(0) translate3d(0, 0, 0);
+    }
+    15% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0;
+        transform: scale(1) translate3d(180px, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate3d(180px, 0, 0);
+    }
+}
+
+.shooting-star {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transform: rotate(30deg);
+    pointer-events: none;
+
+    img {
+        opacity: 0;
+        animation-delay: 0;
+        animation: shooting-star 6s infinite ease-out;
+    }
+}
+
+.shooting-star-right {
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    width: 130px;
+    transform: rotate(-235deg);
+    pointer-events: none;
+
+    img {
+        opacity: 0;
+        animation: shooting-star 6s 3s infinite ease-out;
+        animation-delay: 2.5s;
+    }
+}
+
+// ---------------------------------
+//  Shooting Stars
+// ---------------------------------
+.praise-icon,
+.rock-icon {
+    display: inline-block;
+    width: 44px;
+    height: auto;
+    margin-left: 10px;
+
+    font-size: 3.8rem;
+    line-height: 1;
+
+
+    @include start-at($medium) {
+        font-size: 4.2rem;
+    }
+}
+
+
+// ---------------------------------
+//  Saturn
+// ---------------------------------
+
+.shape-cluster {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 104px;
+    height: 98px;
+    z-index: 1;
+    opacity: 0.7;
+    transform-origin: top right;
+    transform: scale(0.5);
+
+    @include start-at($medium) {
+        opacity: 1;
+        right: 34px;
+        top: 34px;
+        transform: scale(1);
+    }
+
+    &:before,
+    &:after,
+    span:before,
+    span:after {
+        content: '';
+        position: absolute;
+        display: block;
+        transition: transform $trans;
+        transform-origin: center;
+        transform: scale(0) rotate(-20deg);
+    }
+
+    &.in-view {
+        &:before,
+        &:after,
+        span:before,
+        span:after {
+            transform: scale(1) rotate(0);
+        }
+    }
+
+    &:before {
+        width: 14px;
+        height: 14px;
+        background: url('../images/shapes/star-purple.svg') center / cover no-repeat;
+        top: 0;
+        left: 0;
+        transition-delay: 0.05s;
+    }
+    &:after {
+        width: 20px;
+        height: 20px;
+        background: url('../images/shapes/star-purple.svg') center / cover no-repeat;
+        bottom: 0;
+        right: 25px;
+        transition-delay: 0.1s;
+    }
+
+    span:before {
+        width: 28px;
+        height: 28px;
+        background: url('../images/shapes/oval.svg') center / cover no-repeat;
+        top: 14px;
+        left: 40px;
+    }
+    span:after {
+        width: 20px;
+        height: 20px;
+        background: url('../images/shapes/star-orange.svg') center / cover no-repeat;
+        top: 30px;
+        right: 0;
+        transition-delay: 0.15s;
+    }
+}
+
+
+// ------------------------------------
+// Shape groups
+// ------------------------------------
+
+.shapes {
+    position: absolute;
+    height: 166px;
+    width: 294px;
+    transition: transform $trans;
+    transform: scale(0.4);
+    opacity: 0.7;
+
+    @include start-at($small) {
+        opacity: 1;
+    }
+    @include start-at($medium) {
+        transform: scale(0.6);
+    }
+    @include start-at($large) {
+        transform: scale(1);
+    }
+
+    > * {
+        position: absolute;
+        transition: transform $trans;
+        transform-origin: center;
+        transform: scale(0) rotate(-60deg);
+    }
+
+    &.in-view > * {
+        transform: scale(1) rotate(0);
+    }
+}
+
+.shapes--left {
+    left: $container-padding;
+    bottom: 40px;
+    transform-origin: left bottom;
+
+    .shape-1 {
+        fill: $purple;
+        bottom: 0;
+        left: 3%;
+    }
+    .shape-2 {
+        fill: $orange;
+        bottom: 40%;
+        left: 30%;
+        transition-delay: 0.2s;
+    }
+    .shape-3 {
+        fill: $pink;
+        top: 0;
+        right: 15%;
+    }
+    .shape-4 {
+        fill: $pink;
+        top: 45%;
+        right: 0;
+        transition-delay: 0.3s;
+    }
+    .shape-5 {
+        fill: $pink;
+        top: 0;
+        left: 0;
+        transition-delay: 0.1s;
+    }
+    .shape-6 {
+        fill: $orange;
+        top: 25%;
+        right: 20%;
+    }
+    .shape-7 {
+        fill: $pink;
+        top: 0;
+        right: 50%;
+        transition-delay: 0.4s;
+    }
+    .shape-8 {
+        fill: $orange;
+        bottom: 10px;
+        left: 40%;
+    }
+}
+
+
+.shapes--right {
+    right: $container-padding;
+    top: 40px;
+    transform-origin: top right;
+
+    .shape-1 {
+        fill: $purple;
+        bottom: 45%;
+        left: 0;
+    }
+    .shape-2 {
+        fill: $purple;
+        bottom: 10%;
+        left: 15%;
+        transition-delay: 0.2s;
+    }
+    .shape-3 {
+        fill: $purple;
+        top: 5%;
+        right: 65%;
+    }
+    .shape-4 {
+        fill: $orange;
+        top: 0;
+        right: 0;
+        transition-delay: 0.4s;
+    }
+    .shape-5 {
+        fill: $purple;
+        top: 43%;
+        right: 5%;
+        transition-delay: 0.1s;
+    }
+    .shape-6 {
+        fill: $purple;
+        bottom: 0;
+        right: 5%;
+    }
+    .shape-7 {
+        fill: $pink;
+        bottom: 30%;
+        right: 35%;
+        transition-delay: 0.4s;
+    }
+    .shape-8 {
+        fill: $orange;
+        top: 30%;
+        right: 25%;
+        transition-delay: 0.25s;
+    }
+    .shape-9 {
+        fill: $pink;
+        top: 25%;
+        left: 15%;
+    }
+}

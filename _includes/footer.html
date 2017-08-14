@@ -1,0 +1,150 @@
+
+    {% include terms-modal.html %}
+
+
+    <div class="container section">
+        <header data-animate-in="up">
+            <h4 class="h1 text-gradient">Sponsors</h4>
+            <div class="praise-icon">🙌</div>
+        </header>
+
+        <p data-animate-in="up" data-animate-in-delay="100">Interested in sponsoring alongside these companies?</p>
+        <p data-animate-in="up" data-animate-in-delay="200">Check out our <a href="mailto:events@github.com">sponsorship prospectus</a> or email us at <a href="mailto:events@github.com">events@github.com</a>.</p>
+
+        <div class="section section--short">
+            <ul class="logo-list" data-animate-in="up">
+                {% for sponsor in site.data.sponsors %}
+                <li>
+                    <img src="/assets/images/sponsors/{{ sponsor.logo }}" alt="{{ sponsor.name }}" />
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+    <div class="container section section--flush-top">
+        <header data-animate-in="up">
+            <h4 class="h1 text-gradient">Community Partners</h4>
+            <div class="rock-icon">🤘</div>
+        </header>
+
+        <div class="section section--short" data-animate-in="up">
+            <ul class="logo-list" data-animate-in="up">
+                {% for partner in site.data.partners %}
+                <li>
+                    <img src="/assets/images/partners/{{ partner.logo }}" alt="{{ partner.name }}" />
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+
+    <footer class="site-footer bg-universe" data-detect-viewport="">
+
+        <div class="container-wide section">
+            <a class="footer-logo" href="/" data-animate-in="" title="go to the homepage">
+                <img src="/assets/images/GitHub-Universe-Logotype.svg" alt="GitHub Universe Type logo" />
+            </a>
+
+            <div class="site-footer-inner">
+                <nav class="site-footer__nav">
+                    <ul>
+                        <li>
+                            <a href="/code-of-conduct/">Code of Conduct</a>
+                        </li>
+                        <li>
+                            <a href="/faq/">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="/event-terms/">Event Terms</a>
+                        </li>
+                        <li>
+                            <a href="https://githubuniverse.com/2016/" target="_blank">GitHub Universe 2016</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="site-footer__contact">
+                    <ul>
+                        <li>
+                            <p class="h6">Twitter</p>
+                            <a href="https://twitter.com/githubuniverse" target="_blank" rel="nofollow noreferrer">@githubuniverse</a>
+                        </li>
+                        <li>
+                            <p class="h6">General</p>
+                            <a href="mailto:events@github.com">events@github.com</a>
+                        </li>
+                        <li>
+                            <p class="h6">Press</p>
+                            <a href="mailto:press@github.com">press@github.com</a>
+                        </li>
+                        <li>
+                            <a class="icon-link icon-link--no-animation" href="">
+                                <span class="h6">Sponsorship Prospectus</span>
+                                <span><svg width="16" height="16"><use xlink:href="#shape-download"></use></svg></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="site-footer__register">
+                    <!-- Begin MailChimp Signup Form -->
+                    <h4 class="h4">sign up for updates</h4>
+                    <div id="mc_embed_signup">
+                        <form action="//github.us11.list-manage.com/subscribe/post?u=9d7ced8c4bbd6c2f238673f0f&amp;id=03bf4863d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate subscribe-form" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <div class="mc-field-group">
+                                	<label for="mce-EMAIL" class="sr-only">Email Address</label>
+                                	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="your email address">
+                                </div>
+                            	<div id="mce-responses" class="clear">
+                            		<div class="response" id="mce-error-response" style="display:none"></div>
+                            		<div class="response" id="mce-success-response" style="display:none"></div>
+                            	</div>
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_9d7ced8c4bbd6c2f238673f0f_03bf4863d9" tabindex="-1" value="">
+                                </div>
+                                <div class="clear">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe">Add me!</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                    <!--End mc_embed_signup-->
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-legal">
+            <div class="container-wide">
+                <div>
+                    <a class="code-note" href="https://github.com/" target="_blank"><svg width="18" height="13"><use xlink:href="#shape-code"></use></svg> <span>with</span> <svg width="14" height="13"><use xlink:href="#shape-heart"></use></svg> <span>by</span> <svg width="48" height="14"><use xlink:href="#shape-github-logo"></use></svg></a>
+                </div>
+                <div>
+                    <small><a href="">Terms</a>  /  <a href="">Privacy</a>  /  © 2017 GitHub, Inc.</small>
+                </div>
+            </div>
+        </div>
+
+        <figure class="shooting-star">
+            <img src="/assets/images/shapes/shooting-star.svg" alt="shooting star" />
+        </figure>
+        <figure class="shooting-star-right">
+            <img src="/assets/images/shapes/shooting-star.svg" alt="shooting star" />
+        </figure>
+        <img data-detect-viewport="" class="site-footer-planet" src="/assets/images/shapes/planet-gradient.svg" alt="Saturn icon" />
+    </footer>
+
+    <span class="screen"></span>
+    <div class="mobile-menu-trigger">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="is-hidden">
+        {% include svgs.svg %}
+    </div>

@@ -1,0 +1,67 @@
+- name: Stephanie Slattery
+  position: Front End Engineer @ Clique Studios
+  bio: Stephanie Slattery is a web developer in Chicagoland who specializes in front end, accessibility, and user interface design. Stephanie is a Front End Developer at Clique Studios and also develops web apps for a variety of gaming groups in the Chicago area. They come to the world of programming from a psychology and physics background at the Illinois Institute of Technology and are a graduate of Dev Bootcamp Chicago.
+  headshot: Stephanie-Slattery.jpg
+  talk: Accessibility&#58; It's More Than Just Screen
+  talkDescription: Roughly 1 in 5 people in America live with a disability and legal actions against inaccessible sites are becoming more and more common. It would be irresponsible to ignore the needs of all our users when developing for the web, so why don't we design accessible sites to begin with? In this talk, I'll explain the basics of web accessibility, including the guidelines you should be following, the adaptive technologies commonly in use, and help you better advocate for users with disabilities in your work.
+  twitterLink:
+  gitHubLink:
+  id: stephanie-slattery
+  day: Day 1
+
+
+- name: Brian Douglas
+  position: Web Developer @ Netlify
+  bio: Brian Douglas is a Web Developer at Netlify and the host of the JAMstack Radio podcast. He focuses his day to day work on React and JavaScript development. He has built an open sourced React Native iOS app as a way to teach bootcamp students to move out of their comfort zones and mentors new developers into opening their first pull requests to popular JavaScript tools.
+  headshot: Brian-Douglas.jpg
+  talk: Using GitHub's GraphQL API to Manage Open Source Projects
+  talkDescription: |
+    GraphQL is a legitimate way to build and consume APIs with less front end frustration. It has only been out of developer preview but truly shaking up the way front-end and mobile applications are being developed.
+    Getting into open source projects can be a daunting process, and there are a lot of existing tools out there to assist in getting your first open source pull request including Code Triage, IssueHub, and of course firstpr.me. Open Sauced is one more tool to help by providing a platform to organize notes on potential projects the user has not yet contributed to by leveraging the now public GitHub GraphQL API. This talk will compare the GraphQL benefits over REST and walk through the implementation of live code implementing the open source GraphQL features using the Apollo project.
+  twitterLink:
+  gitHubLink:
+  id: brian-douglas
+  day: Day 1
+
+
+- name: David Stolarsky
+  position: Software Engineer @ The New York Times
+  bio: David is a longtime hacker, born in the same town as HAL9000. Now a Software Engineer at The New York Times, he builds branded content and CMSes for branded content. Previously he built interactive installations with C++ and OpenGL at Ars Electronica Futurelab. David is also an amateur photographer; his 360º photos are approaching half a million views on Google Streetview.
+  headshot: David-Stolarsky.jpg
+  talk: Quickly Build a Collaborative CMS Powered by the GitHub API
+  talkDescription: |
+    At The New York Times we have built an entire CMS in which the only stateful layer is the GitHub API. This vastly simplifies our infrastructure setup and maintenance, and gives us powerful primitives on which to build a collaborative content editing system used by writers, designers, photographers, editors, and even web developers.
+    In this talk you will learn&#58; how The New York Times uses the GitHub API to store documents in the CMS's intermediate format, how we support collaborative editing via the GitHub API, how we catalog our posts via the GitHub API, how we are able to support legacy ("custom") development at the same time, and how the GitHub ecosystem, e.g. CI services empower our CMS even further.
+  twitterLink:
+  gitHubLink:
+  id: david-stolarsky
+  day: Day 1
+
+
+- name: Jamie Strusz
+  position: Services Engineer @ GitHub
+  bio: Jamie is an engineer on GitHub's Professional Services team, where she enables companies to wield the power of GitHub Enterprise responsibly. She has a background in art history, and has worked at Microsoft, Google, and Nintendo of America. She likes Linux, open source, and documenting all the things. When not Hubbing, she lives and travels in a Westfalia Vanagon with her partner, Maxwell, and corgi, Yorick.
+  headshot: Jamie-Strusz.jpg
+  talk: Having an Invisible Disease at GitHub
+  talkDescription: |
+    Invisible diseases (mental health conditions, neurologic disease, rheumatic disease, etc.) are harder to identify, vary widely, and are often misunderstood and stigmatized. As someone with Young Onset Parkinson's Disease, I'm personally familiar with how my working conditions, the attitudes of my colleagues, and my ability to disclose has affected the course of my disease.
+    The theme of this talk is about how an empathetic, positive, and flexible work atmosphere is beneficial for people living with chronic disease, based on my personal account. Being productive and thriving at GitHub despite having Young Onset Parkinson's Disease has largely depended on working with empathetic people, but also the ability to work remotely, flexibility, and ultimately feel supported enough to disclose to those I work with. Companies can foster an atmosphere of trust that allows those dealing with chronic illness to self care, whether they choose to disclose or not.
+  twitterLink: https://twitter.com/allthedoll
+  gitHubLink: https://github.com/allthedoll
+  id: jamie-strusz
+  day: Day 1
+
+
+- name: Trent Willis
+  position: Senior UI Engineer @ Netflix
+  bio: Trent Willis is a Senior UI Engineer at Netflix, where he builds tools and applications to give others insight into their applications. He's also a self-professed music junkie who happens to love a good test suite.
+  headshot: Trent-Willis.jpg
+  talk: Caring For Your Felling Developers
+  talkDescription: |
+    “Move Fast & Break Things”, “Get Shit Done”, “Disrupt”. These are mantras of the tech and design industry. They praise speed and hard work but overlook a core element&#58; people. When building software, we devote hundreds of hours to planning, organizing, building, and launching, but we often only spend a very small fraction of that same time thinking about the people responsible for those activities.
+    Soft skills and emotional intelligence are critical components to building great software. In general, I have found technical audiences do not get as much exposure to these topics as they should. Understanding each other and knowing practical ways to keep each other motivated and encouraged will help us go beyond what our individual technical skills can accomplish.
+    Let's talk about how we can proactively care for our team with the same passion we use when caring for our software. We’ll explore practical ways to change how we engage with each other to help us build a more supportive working environment and also deliver better products, faster.
+  twitterLink:
+  gitHubLink:
+  id: trent-willis
+  day: Day 1

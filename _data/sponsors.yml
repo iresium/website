@@ -1,0 +1,44 @@
+- name: IBM
+  logo: IBM.png
+
+- name: compose
+  logo: compose.svg
+
+- name: heroku
+  logo: heroku.svg
+
+- name: travisCi
+  logo: TravisCI.svg
+
+- name: waffle
+  logo: waffle.png
+
+- name: circle ci
+  logo: circle-ci.svg
+
+- name: Axosoft
+  logo: Axosoft.svg
+
+- name: moz
+  logo: moz.svg
+
+- name: AWS
+  logo: AWS.svg
+
+- name: BlackDuck
+  logo: BlackDuck.svg
+
+- name: codeship
+  logo: codeship.svg
+
+- name: Sticker Mule
+  logo: sticker-mule.png
+
+- name: Digital Ocean
+  logo: Digital-Ocean.svg
+
+- name: contegix
+  logo: contegix.svg
+
+- name: Modus
+  logo: Modus-Create.svg

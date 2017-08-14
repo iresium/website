@@ -1,0 +1,84 @@
+
+
+<!-- Speaker Modal -->
+<article class="modal-wrap" id="{{speaker.id}}">
+    <div class="modal">
+        <div class="modal__close" data-click-target="{{speaker.id}}" data-click-bodyClass="modal-is-active">
+            <div>
+                <p class="sr-only">Close Modal</p>
+                <svg width="20" height="20"><use xlink:href="#shape-close"></use></svg>
+            </div>
+        </div>
+
+        <div class="modal__inner">
+            <div class="speaker speaker--single">
+                <div class="speaker-profiles">
+                    <div class="speaker-profile">
+                        <figure class="speaker-image bg-image">
+                            <img src="/assets/images/speakers/{{speaker.headshot}}" alt="headshot of {{ speaker.name }}" />
+                        </figure>
+                        <div class="speaker-info">
+                            <h2 class="h2 speaker-name">{{speaker.name}}</h2>
+                            <p class="h5">{{speaker.position}}</p>
+
+                            <ul class="social-links">
+                                {% if speaker.gitHubLink|length %}
+                                <li>
+                                    <a class="GitHub" href="{{ speaker.gitHubLink }}" target="_blank" rel="nofollow noreferrer" title="link to {{ speaker.name }}'s GitHub page">
+                                        <svg width="23" height="26"><use xlink:href="#shape-github"></use></svg>
+                                    </a>
+                                </li>
+                                {% endif %}
+
+                                {% if speaker.twitterLink|length %}
+                                <li>
+                                    <a href="{{ speaker.twitterLink }}" target="_blank" rel="nofollow noreferrer" title="link to {{ speaker.name }}'s twitter page">
+                                        <svg width="36" height="36"><use xlink:href="#shape-twitter"></use></svg>
+                                    </a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-modal-content">
+                    <div>
+                        <div class="text-group">
+                            <div>
+                                <h5 class="h5">About</h5>
+                                <p class="p-sm">{{ speaker.bio }}</p>
+                            </div>
+                        </div>
+
+                        <div class="text-group">
+                            <h5 class="h5">The Talk</h5>
+                            <div class="talk-info">
+                                <p class="p">{{ speaker.talk }}</p>
+                                <div class="h6 is-hidden">10:30am | {{ speaker.day }}</div>
+                            </div>
+                            {% for session in event.day1Sessions %}
+                                {% if session.speaker == speaker.id %}
+                                    <div>
+                                        <h5 class="h5">Talk - {{ session.title }}</h5>
+                                        <p class="p-sm">{{ session.time }}</p>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                            {% for session in event.day2Sessions %}
+                                {% if session.speaker == speaker.id %}
+                                    <div>
+                                        <h5 class="h5">Talk - {{ session.title }}</h5>
+                                        <p class="p-sm">{{ session.time }}</p>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="modal-screen"></span>
+</article>

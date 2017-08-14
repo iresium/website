@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="64px" viewBox="0 0 105 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>planet 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="300_After-Party" transform="translate(-143.000000, -408.000000)" stroke="#F37055" stroke-width="3.85826772">
+            <g id="universe-pattern" transform="translate(36.000000, 123.000000)">
+                <g id="planet-2" transform="translate(109.000000, 281.000000)">
+                    <ellipse id="Oval" transform="translate(45.579457, 35.829845) rotate(-78.640000) translate(-45.579457, -35.829845) " cx="45.5794569" cy="35.829845" rx="29.6211475" ry="29.5818898"></ellipse>
+                    <path d="M70.9097268,51.1574803 C87.9859016,58.4385827 112.358361,53.3952756 94.4101639,43.5622047 C76.4619672,33.7291339 48.6510929,39.8913386 18.2131148,36.2425197 C-12.2248634,32.5937008 1.53983607,18.8968504 19.3169399,22.1488189" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

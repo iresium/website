@@ -1,0 +1,79 @@
+// ---------------------------------------------------------------------
+//  Utility Classes
+// ---------------------------------------------------------------------
+
+
+.is-hidden {
+    display: none;
+}
+
+.sr-only,
+.screen-reader-text {
+    @include visually-hidden;
+}
+
+.text-center {
+    text-align: center;
+
+    p, img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.img-full {
+    width: 100%;
+}
+
+.bg-image {
+    @include bg-image;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+// ----------------------------------------
+//  Misc BGs
+// ----------------------------------------
+
+.bg-black {
+    background: $black;
+}
+
+.bg-dark {
+    background: $gray-dark;
+    color: white;
+}
+
+.bg-gradient {
+    background-image: $gradient-purple-blue;
+}
+
+.bg-gradient-pink {
+    background-image: $gradient-orange-pink;
+}
+
+
+// ----------------------------------------
+//  Media Object
+// ----------------------------------------
+
+.media-object {
+
+    figure {
+        margin-bottom: 30px;
+        max-width: 100px;
+    }
+
+    @include start-at($small){
+        display: flex;
+
+        figure {
+            margin-right: 30px;
+        }
+    }
+}

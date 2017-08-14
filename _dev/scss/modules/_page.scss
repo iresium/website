@@ -1,0 +1,89 @@
+// ---------------------------------------------------------------------
+//  Page Styles
+// ---------------------------------------------------------------------
+
+.page {
+    overflow: hidden;
+    position: relative;
+    padding: 100px 0 80px;
+    z-index: 1;
+
+    &:before {
+        position: absolute;
+        width: 90%;
+        height: 2000px;
+        min-height: 90%;
+        left: 5%;
+        top: 30px;
+        content: '';
+        background: url('../images/shapes/star-group.svg') top center / 1086px 1160px repeat;
+        background-position: fixed;
+        display: block;
+        z-index: -1;
+        transform-origin: center;
+        opacity: 1;
+        transition: all $trans;
+    }
+}
+
+.page-header {
+    margin-bottom: 60px;
+    color: $white;
+    text-align: center;
+    max-width: 750px;
+}
+
+.page-content-block {
+    position: relative;
+    width: 100%;
+    color: white;
+    background: $gray-dark;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+    border-radius: 6px;
+    padding: 40px $container-padding;
+
+    @include start-at($medium) {
+        padding: 60px 100px;
+    }
+
+    .shapes {
+        width: 106px;
+        height: 100px;
+        right: 14px;
+        bottom: 20px;
+        transform-origin: bottom right;
+
+        .shape-1 {
+            fill: $purple;
+            bottom: 0;
+            left: 0;
+            transition-delay: 0.6s;
+        }
+        .shape-2 {
+            fill: $purple;
+            bottom: 35%;
+            right: 0;
+            transition-delay: 0.65s;
+        }
+        .shape-3 {
+            fill: $pink;
+            bottom: 10px;
+            left: 45%;
+            transition-delay: 0.7s;
+        }
+        .shape-4 {
+            fill: $orange;
+            top: 0;
+            right: 0;
+            transition-delay: 0.65s;
+        }
+    }
+}
+
+// ----------------------------------------
+//
+// ----------------------------------------
+
+.page-body {
+
+}

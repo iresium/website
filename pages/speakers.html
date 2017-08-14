@@ -1,0 +1,45 @@
+---
+layout: default
+title: Speakers
+id: page-speakers
+permalink: /speakers/
+---
+
+<article class="page gradient bg-universe" id="{{ page.id }}" data-detect-viewport="">
+    <header class="page-header container">
+        <h2 class="h1" data-animate-in="up">Speakers</h2>
+        <p data-animate-in="up" data-animate-in-delay="100">Get the latest from community leaders, industry experts, and the GitHub Team.</p>
+    </header>
+
+    <div class="page-body container-wide">
+
+        <ul class="speaker-list" data-animate-in="up" data-animate-in-delay="300">
+            {% for speaker in site.data.speakers %}
+            <li class="speaker-preview" data-click-target="{{speaker.id}}" data-click-bodyClass="modal-is-active" data-animate-in="up">
+                <figure class="speaker-preview__image bg-image" style="background: url('assets/images/speakers/{{speaker.headshot}}') center / cover no-repeat;">
+                    <img src="/assets/images/speakers/{{speaker.headshot}}" alt="headshot of {{ speaker.name }}" />
+                </figure>
+                <div class="speaker-preview__info">
+                    <div>
+                        <h3 class="h3 speaker-name">{{ speaker.name }}</h3>
+                        <p>{{ speaker.position }}</p>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <figure class="shooting-star">
+        <img src="/assets/images/shapes/shooting-star.svg" alt ="shooting star" />
+    </figure>
+    <figure class="shooting-star-right">
+        <img src="/assets/images/shapes/shooting-star.svg" alt ="shooting star" />
+    </figure>
+</article>
+
+<div class="speaker-modals">
+{% for speaker in site.data.speakers %}
+    {% include speaker-modal.html %}
+{% endfor %}
+</div>
